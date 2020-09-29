@@ -1,2 +1,2 @@
 # audio-to-txt
-Simple speech converter with Python
+Simple speech to text converter with Python
