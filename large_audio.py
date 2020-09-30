@@ -7,6 +7,8 @@ from pydub.silence import split_on_silence
 # create a speech recognition object
 r = sr.Recognizer()
 
+filename = "audio.wav"
+
 # a function that splits the audio file into chunks
 # and applies speech recognition
 def get_large_audio_transcription(path):
@@ -50,3 +52,5 @@ def get_large_audio_transcription(path):
                 whole_text += text
     # return the text for all chunks detected
     return whole_text
+
+print("\nFull text:", get_large_audio_transcription(filename))
